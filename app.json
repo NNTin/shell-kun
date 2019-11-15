@@ -10,8 +10,8 @@
   "logo": "https://i.imgur.com/11zvdoc.png",
   "env": {
      "ARGS_AND_FLAGS": {
-      "description": "See: https://github.com/shellinabox/shellinabox/wiki/Shell-In-A-Box-manual",
-      "value": "-d --port=$PORT -t -s /:SSH",
+      "description": "See: https://github.com/shellinabox/shellinabox/wiki/Shell-In-A-Box-manual port number is already bound, see Procfile",
+      "value": "-d -t -s /:SSH",
       "required": false
     }
   },
