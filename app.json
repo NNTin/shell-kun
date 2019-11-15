@@ -1,0 +1,23 @@
+{
+  "name": "shell-kun",
+  "description": "Shellinabox on Heroku",
+  "keywords": [
+    "heroku",
+    "shellinabox",
+    "ssh"
+  ],
+  "website": "https://github.com/NNTin/shell-kun",
+  "logo": "https://i.imgur.com/11zvdoc.png",
+  "env": {
+     "ARGS_AND_FLAGS": {
+      "description": "See: https://github.com/shellinabox/shellinabox/wiki/Shell-In-A-Box-manual",
+      "value": "-d --port=$PORT -t -s /:SSH",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-apt"
+    }
+  ]
+}
