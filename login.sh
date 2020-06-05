@@ -11,4 +11,7 @@ export SCREENDIR=$HOME/.apt/var/run/screen;
 #preparing vim
 link $HOME/.apt/usr/bin/vim.basic $HOME/.apt/usr/bin/vim
 
+#disable startup message
+echo "startup_message off" >> $HOME/.screenrc; 
+
 screen;
