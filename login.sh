@@ -11,4 +11,4 @@ export SCREENDIR=$HOME/.apt/var/run/screen;
 #preparing vim
 link $HOME/.apt/usr/bin/vim.basic $HOME/.apt/usr/bin/vim
 
-bash;
+screen;
