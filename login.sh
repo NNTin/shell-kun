@@ -4,6 +4,9 @@
 cd .profile.d;
 source *;
 
+PATH="$HOME/.apt/usr/local/bin:/$HOME/.apt/usr/bin:$HOME/.apt/bin:$HOME/.apt/usr/games:$PATH"
+LD_LIBRARY_PATH="$HOME/.apt/lib/x86_64-linux-gnu/:$LD_LIBRARY_PATH"
+
 #preparing screen
 mkdir -p $HOME/.apt/var/run/screen;
 export SCREENDIR=$HOME/.apt/var/run/screen;
