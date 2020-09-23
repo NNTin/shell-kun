@@ -9,13 +9,21 @@
   "website": "https://github.com/NNTin/shell-kun",
   "logo": "https://i.imgur.com/11zvdoc.png",
   "env": {
-     "ARGS_AND_FLAGS": {
-      "description": "See: https://github.com/shellinabox/shellinabox/wiki/Shell-In-A-Box-manual port number is already bound, see Procfile",
-      "value": "-d -t -s /:SSH",
+    "SHELLINABOX_OPTS": {
+      "description": "optional, see: https://github.com/shellinabox/shellinabox/wiki/Shell-In-A-Box-manual",
+      "value": "",
+      "required": false
+    },
+    "SHELLINABOX_SERVICE_COMMAND": {
+      "description": "if empty: bash",
+      "value": "",
       "required": false
     }
   },
   "buildpacks": [
+    {
+      "url": "https://github.com/nntin/heroku-buildpack-shellinabox"
+    },
     {
       "url": "https://github.com/heroku/heroku-buildpack-apt"
     }

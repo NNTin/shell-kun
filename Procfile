@@ -1,1 +1,1 @@
-web: bash start.sh
+web: bin/start_shellinabox.sh
